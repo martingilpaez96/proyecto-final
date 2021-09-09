@@ -1,0 +1,169 @@
+@import '_fuentes.scss';
+@import '_colores.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+
+.header {
+    background-color: $color-navbar-footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    h1 {
+        display: flex;
+        list-style: none;
+        font-style: italic;
+        font-family: $fuente;
+        color: $color-fuente;
+    }
+
+    nav {
+        display: flex;
+        list-style: none;
+    }
+
+    a {
+        margin-left: 10px;
+        font-style: normal;
+        text-decoration: none;
+        padding: 5px;
+        font-family: $fuente;
+        font-size: $titulo-navbar;
+        color: $color-fuente;
+    }
+
+}
+
+.principal-contacto {
+    position: relative;
+    background: linear-gradient(to bottom, #171313, black);
+
+        .contacto-imagen {
+            position: relative;
+            display: inline-block;
+
+            .contacto-imagen-img {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                filter: brightness(50%);
+            }
+
+            #contacto-principal-carousel {
+                padding-bottom: 170px;
+            }
+
+            #contacto-carousel-titulos {
+                color: $color-fuente;
+                font-family: $fuente;
+                
+                h2 {
+                    font-size: $titulos-principales;
+                }    
+            }
+        }
+
+        .principal-formulario {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 100px;
+        
+            .principal-formulario-titulo {
+                display: flex;
+                justify-content: center;
+                padding: 40px;
+                color: $color-fuente;
+                font-size: $titulos-secundarios;
+                font-family: $fuente;
+            }
+
+                #principal-formulario-titlabel {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px;
+                    color: $color-fuente;
+                    font-family: $fuente;
+                    font-size: $titulos-terceros;
+                }
+        }        
+
+        .principal-redes {
+                display: flex;
+                justify-content: center;
+                padding: 100px;
+
+             #principal-redes-grilla {
+                    background: none;
+
+                    h2 {
+                        display: flex;
+                        justify-content: center;
+                        color: $color-fuente;
+                        font-family: $fuente;
+                        font-size: $titulos-secundarios;
+                    }
+
+                    h3 {
+                        color: $color-fuente;
+                        font-family: $fuente;
+                        font-size: $titulos-terceros;
+                    }
+
+                    .grilla-contenido {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .grilla-contenido-logos {
+                        display: flex;
+                        justify-content: center;
+                    
+                        a {
+                            padding: 20px;
+                        }
+                    } 
+                }
+            }                            
+
+        .map-responsive {
+            display: flex;
+            justify-content: center;
+            padding: 100px;
+        }
+    }    
+
+.footer {
+    background-color: $color-navbar-footer;
+
+    .container {
+        background-color: $color-navbar-footer;
+        padding: 50px;
+    }
+
+    .col {
+        color: $color-fuente;
+    }
+
+    #lista {
+        list-style: none;
+    
+        #listak {
+            text-decoration: none;
+            color: $color-fuente;
+        }
+    }    
+}

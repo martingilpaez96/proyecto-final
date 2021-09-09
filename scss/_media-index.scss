@@ -1,0 +1,215 @@
+@import 'colores.scss';
+@import 'fuentes.scss';
+@import '_fuentes-responsive.scss';
+
+@media screen and (max-width: 1130px) {
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    html {
+        height: 100%;
+    }
+
+    h2 {
+        font-size: $titulos-secundarios;
+    }
+
+    h3 {
+        font-size: $titulos-terceros;
+    }
+
+
+    #principal-carousel-logo {
+        display: none;
+    }
+
+    #body-header {
+        display: none;
+    }
+
+    .navbar-responsive {
+
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        display: contents;
+
+        a {
+            margin-left: 10px;
+            font-style: normal;
+            text-decoration: none;
+            padding: 5px;
+            font-family: $fuente;
+            font-size: $titulo-navbar;
+            color: $color-fuente;
+        }
+
+        #navbar-responsive-color{
+            background-color: $color-navbar-footer !important;
+        }
+
+        #navbar-responsive-collapse {
+            background-color: $color-navbar-footer !important;
+        }
+    }
+
+    .principal {
+        position: relative;
+        display: flex;
+
+        #principal-carousel {
+            justify-content: center;
+            bottom: 300px;
+            display: flex !important;
+
+            h2 {
+                font-size: $titulos-secundarios;
+                color: $color-fuente;
+                font-family: $fuente;
+            }
+        }
+
+        #titulo-navbar {
+            display: block;
+        }
+
+    }
+
+    #carta {
+        margin-bottom: 0px;
+    }
+
+    #footer-responsive {
+        display: inline-grid;
+
+        #footer-responsive-none{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 895px) {
+
+    .principal {
+        position: relative;
+        display: flex;
+
+        #principal-carousel {
+            justify-content: center;
+            bottom: 250px;
+            display: flex !important;
+
+            h2 {
+                font-size: $titulos-terceros;
+                color: $color-fuente;
+                font-family: $fuente;
+            }
+        }
+
+        #titulo-navbar {
+            display: block;
+        }
+
+    }  
+}
+
+@media screen and (max-width: 650px) {
+
+    .principal {
+        position: relative;
+        display: flex;
+
+        #principal-carousel {
+            justify-content: center;
+            bottom: 150px;
+            display: flex !important;
+
+            h2 {
+                font-size: $titulos-terceros;
+                color: $color-fuente;
+                font-family: $fuente;
+            }
+        }
+
+        #titulo-navbar {
+            display: block;
+        }
+    } 
+}
+
+@media screen and (max-width: 500px) {
+
+    h2 {
+        font-size: $responsive-titulos-secundarios;
+    }
+
+    h3 {
+        font-size: $responsive-titulos-terceros;
+    }
+
+    p a {
+        font-size: $responsive-titulos-navbar;
+    }
+
+    .principal {
+        position: relative;
+        display: flex;
+
+        #principal-carousel {
+            justify-content: center;
+            bottom: 50px;
+            display: flex !important;
+
+            h2 {
+                color: $color-fuente;
+                font-family: $fuente;
+            }
+        }
+
+        #titulo-navbar {
+            display: block;
+        }
+
+    }  
+}
+
+@media screen and (max-width: 375px) {
+
+    .principal {
+        position: relative;
+        display: flex;
+
+        #principal-carousel {
+            justify-content: center;
+            bottom: 0px;
+            display: flex !important;
+
+            h2 {
+                font-size: 18px;
+                color: $color-fuente;
+                font-family: $fuente;
+            }
+        }
+
+        #titulo-navbar {
+            display: block;
+        }
+
+    }
+    
+    #titulo-responsive {
+        font-size: 18px;
+    }
+
+    #titulo-responsive-secundario {
+        font-size: 14px;
+    }
+
+    #articulo-responsive {
+        padding: 50px;
+    }    
+
+}

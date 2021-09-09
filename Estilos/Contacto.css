@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+    .header h1 nav {
+    display: flex;
+    list-style: none;
+    }
+
+    .header h1 nav a {
+        margin-left: 10px;
+    }
+
+    .header h1 {
+        color: cornsilk;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: italic;
+    }
+
+    .header a {
+        color: cornsilk;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+
+.principal-contacto {
+    position: relative;
+    background: linear-gradient(to bottom, #171313, black);
+    }
+
+        .contacto-imagen {
+            position: relative;
+            display: inline-block;
+        }
+
+        .contacto-imagen-img {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            filter: brightness(50%);
+        }
+
+        #contacto-principal-carousel {
+            padding-bottom: 170px;
+        }
+
+        #contacto-carousel-titulos {
+            color: cornsilk;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .principal-formulario {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 100px;
+        }
+
+        .principal-formulario-titulo {
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        #principal-formulario-titlabel {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .principal-redes {
+            display: flex;
+            justify-content: center;
+        }
+
+        #principal-redes-grilla {
+            background: none;
+        }
+
+        .grilla-titulos {
+            display: flex;
+            justify-content: center;
+        }
+
+        .grilla-contenido {
+            display: flex;
+            justify-content: center;
+        }
+
+        .grilla-contenido-logos {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logos-redes {
+            padding: 20px;
+        }
+
+        .map-responsive {
+            display: flex;
+            justify-content: center;
+        }
+
+    
+.footer {
+    background-color: black;
+}
+
+.container {
+    background-color: black;
+    padding: 50px;
+}
+
+.col {
+    color: cornsilk;
+}
+
+#lista {
+    list-style: none;
+}
+    #listak {
+        text-decoration: none;
+        color: cornsilk;
+    }

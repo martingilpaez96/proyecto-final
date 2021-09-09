@@ -1,0 +1,129 @@
+@import '_fuentes.scss';
+@import '_colores.scss';
+@import '_media-portfolio.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+
+.header {
+    background-color: $color-navbar-footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    h1 {
+        display: flex;
+        list-style: none;
+        font-style: italic;
+        font-family: $fuente;
+        color: $color-fuente;
+    }
+
+    nav {
+        display: flex;
+        list-style: none;
+    }
+
+    a {
+        margin-left: 10px;
+        font-style: normal;
+        text-decoration: none;
+        padding: 5px;
+        font-family: $fuente;
+        font-size: $titulo-navbar;
+        color: $color-fuente;
+    }
+
+}
+
+.principal-portfolio {
+    position: relative;
+    background: linear-gradient(to bottom, #171313, black);
+}
+
+    .portfolio-imagen {
+        position: relative;
+        display: inline-block;
+    }
+
+    .portfolio-imagen-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        filter: brightness(50%);
+    }
+
+    #portfolio-principal-carousel {
+        padding-bottom: 50px;
+    }
+
+    #principal-carousel-titulos {
+        color: $color-fuente;
+        font-family: $fuente;
+
+        h2 {
+            font-size: $titulos-principales;
+        }
+
+        h3 {
+            font-size: $titulos-secundarios;
+        }
+    }
+
+    #grilla {
+        position: relative;
+        background: none;
+        filter: none;
+        display: block;
+        align-items: center;
+    }
+
+    #columnas-centradas {
+        padding-top: 40px;
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+
+
+    #columna-centrada {
+        filter: none;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        background-color: $color-navbar-footer;
+    
+    .container {
+        background-color: $color-navbar-footer;
+        padding: 50px;
+    }
+
+    .col {
+        color: $color-fuente;
+    }
+
+    #lista {
+        list-style: none;
+    }
+        #listak {
+            text-decoration: none;
+            color: cornsilk;
+        }
+}
